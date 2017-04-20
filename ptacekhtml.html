@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+
+
+
+<html> 
+
+
+
+<head>
+
+<meta http-equiv="content-type" content="text/html"> 
+
+<meta charset="UTF-8">
+
+<title>Česká Zemědělská Univerzita v Praze </title>
+
+
+</head>
+
+<body>
+
+<header>
+
+<h1>Patrik Ptáček - databáze knih</h1>
+
+</header>
+
+
+
+<main>
+
+
+<nav>
+<section>
+
+
+
+<ul>
+        <li><a href="#uvod">Úvod</a></li>
+        <li><a href="#metodika">Metodika - Použité nástroje</a></li>
+        <li><a href="#popis">Popis elementů a atributů</a></li>
+        <li><a href="#transf">Popis transformace</a></li>
+        <li><a href="#zaver">Závěr</a></li>
+      </ul>
+
+
+</section>
+</nav>
+
+
+<section id="uvod">
+  <article>
+
+      <h1>Úvod</h1>
+
+      <p>Jako téma pro svou seminární práci jsem si zvolil aplikaci pro knihovnu. Motivaci pro mě bylo to, že mám zálibu ve čtení a přijde mi tak toto téma atraktivní.</p>
+
+      <p>XML soubor je v práci implementován ke konfiguraci typu knih, uživatelů a jejich práv.</p>
+
+  </article>
+</section>
+<section id="metodika">
+        <article>
+          <header>
+            <h2>Metodika</h2>
+          </header>
+          <h3>Využité programy</h3>
+          <p>
+          Pro tvorbu tohoto projektu jsem použil program <a href="https://www.sublimetext.com/">Sublime Text</a>
+          a prohlížeč <a href="https://www.google.com/chrome/">Google Chrome</a>.    
+          </p>
+          <h3>Využité webové stránky</h3>
+          <p>
+            Většinu informací jsem našel na stránkách <a href="https://www.w3schools.com/">W3Schools</a>, validaci jsem provedl přes 
+            <a href="https://validator.w3.org/">oficální validátor W3</a>
+          </p>        
+        </article>
+  </section>
+
+
+
+
+
+ <section id="popis" >
+   <h3>Použité elementy</h3>
+            <table border="1" id="elementy" title="Tabulka elementů">
+            <tr>
+              <td>Název elementu</td>
+              <td>Popis elementu</td>
+              <td>Hodnoty</td>
+            </tr>
+            <tr>                       
+              <td>nastaveni-app</td>
+              <td>Nastavuje obecné nastavení</td>
+              <td>Žádné</td>
+            </tr>
+            <tr>                       
+              <td>Plug</td>
+              <td>Rozšiřuje funkčnost a možnosti aplikace</td>
+              <td>Žádné</td>
+            </tr> 
+            <tr>                       
+              <td>jazyk</td>
+              <td>Určuje v jakém jazyku bude aplikace</td>
+              <td>CZ, EN, RU</td>
+            </tr>
+            <tr>                       
+              <td>Komentare</td>
+              <td>Určuje zda obsahuje plugin komentar kterým se komentují knihy</td>
+              <td>0, 1</td>
+            </tr>
+            <tr>                       
+              <td>onlinechat</td>
+              <td>Určuje zda obsahuje plugin chat kterým se dá chatovat</td>
+              <td>0, 1</td>
+            </tr>
+            <tr>                       
+              <td>onlinectecka</td>
+              <td>Určuje zda obsahuje plugin ctecka kterým se čtou knihy</td>
+              <td>0, 1</td>
+            </tr>
+            <tr>                       
+              <td>kontakt-admin</td>
+              <td>email admina</td>
+              <td>email</td>
+            </tr>
+            <tr>                       
+              <td>social-media</td>
+              <td>Obashuje sociální media jako je fb a twitter</td>
+              <td>Žádné</td>
+            </tr>
+            <tr>                       
+              <td>Facebook</td>
+              <td>Odkaz stránka knihy na fb </td>
+              <td>www.facebook.com/kniha</td>
+            </tr>
+            <tr>                       
+              <td>Twitter</td>
+              <td>Odkaz stránka knihy na twitter </td>
+              <td>www.twitter.com/kniha</td>
+            </tr> 
+            <tr>                       
+              <td>mobilnidata</td>
+              <td>Data která se budou vypisovat do applikace jako je grafika</td>
+              <td>Žádné</td>
+            </tr>
+            <tr>                       
+              <td>grafika</td>
+              <td>Obsahuje grafické prvky aplikace</td>
+              <td>Žádné</td>
+            </tr>
+            <tr>                       
+              <td>background</td>
+              <td>Pozadí</td>
+              <td>Barva</td>
+            </tr>
+            <tr>                       
+              <td>font</td>
+              <td>Typ fontu</td>
+              <td>Arial atd...</td>
+            </tr>
+            <tr>                       
+              <td>fontcolor</td>
+              <td>barva fontu</td>
+              <td>barva</td>
+            </tr>
+            <tr>                       
+              <td>prava</td>
+              <td>práva uživatelů</td>
+              <td>host,uzivatel,admin</td>
+            </tr>
+            <tr>                       
+              <td>typ-prav</td>
+              <td>Určuje uživatelům práva</td>
+              <td>host,uzivatel,admin</td>
+            </tr>
+            <tr>                       
+              <td>cteniknih</td>
+              <td>právo na čtení knih</td>
+              <td>0, 1</td>
+            </tr>
+            <tr>                       
+              <td>komentar</td>
+              <td>právo komentovat</td>
+              <td>0, 1</td>
+            </tr>
+            <tr>                       
+              <td>hodnoceni</td>
+              <td>právo hodnotit knihy</td>
+              <td>0, 1</td>
+            </tr>
+            <tr>                       
+              <td>mazaniknih</td>
+              <td>právo mazáni knih </td>
+              <td>0, 1</td>
+            </tr>
+            <tr>                       
+              <td>pridavaniknih</td>
+              <td>právo přidávat knihy</td>
+              <td>0, 1</td>
+            </tr>
+            <tr>                       
+              <td>upravazanru</td>
+              <td>právo úpravy knih</td>
+              <td>0, 1</td>
+            </tr>
+            <tr>                       
+              <td>uzivatel</td>
+              <td>Obsahuje uživatele</td>
+              <td>podle id</td>
+            </tr>
+            <tr>                       
+              <td>Osoba</td>
+              <td>osoby</td>
+              <td>Žádné</td>
+            </tr>
+            <tr>                       
+              <td>jmeno</td>
+              <td>jméno osoby</td>
+              <td>string </td>
+            </tr>
+            <tr>                       
+              <td>prijmeni</td>
+              <td>příjmení osoby</td>
+              <td>string</td>
+            </tr>
+            <tr>                       
+              <td>prihlas-jmeno</td>
+              <td>přihlašovací jmeno osoby </td>
+              <td>string</td>
+            </tr>
+            <tr>                       
+              <td>typ-prav</td>
+              <td>přiřazuje uživateli práva</td>
+              <td>host,uživatel,admin</td>
+            </tr>
+            <tr>                       
+              <td>knihovny</td>
+              <td>knihy jsou pod určitými knihovnami </td>
+              <td>String </td>
+            </tr>
+            <tr>                       
+              <td>typknihovny</td>
+              <td>typ knihoven kde knihy jsou</td>
+              <td>Žádné</td>
+            </tr>
+            <tr>                       
+              <td>nazevknihovny</td>
+              <td>samotná knihovna kde knihy jsou uloženy</td>
+              <td>string</td>
+            </tr>  
+            <tr>                       
+              <td>knihaid</td>
+              <td>id knihy, která je uložena v té dané knihovně</td>
+              <td>string</td>
+            </tr>   
+            <tr>                       
+              <td>zanry</td>
+              <td>typ žánru knihy</td>
+              <td>žádné</td>
+            </tr>                                                     
+            <tr>                       
+              <td>technika</td>
+              <td>technický žánr na pozadí</td>
+              <td>string</td>
+            </tr>            
+
+
+          <tr>                       
+              <td>botanika</td>
+              <td>botanický žánr na pozadí</td>
+              <td>string</td>
+            </tr>   
+          <tr>                       
+              <td>Kucharka</td>
+              <td>kuchařský žánr na pozadí</td>
+              <td>string</td>
+            </tr>         
+          <tr>                       
+              <td>motoristika</td>
+              <td>motoristický žánr na pozadí</td>
+              <td>string</td>
+            </tr>     
+  <tr>                       
+              <td>kniha</td>
+              <td>samotná kniha která je obohacena id</td>
+              <td>žádné</td>
+            </tr>                                                                                                                                                   
+  <tr>                       
+              <td>zanr</td>
+              <td> žánr knihy</td>
+              <td>string</td>
+            </tr>                                                                                                                                                   
+  <tr>                       
+              <td>nazev</td>
+              <td>název knihy</td>
+              <td>string</td>
+            </tr>                                                                                                                                                   
+  <tr>                       
+              <td>isbn</td>
+              <td>speciální číslo knihy</td>
+              <td>integer</td>
+            </tr>                                                                                                                                                   
+  <tr>                       
+              <td>rok</td>
+              <td>rok kdy kniha byla vydaná</td>
+              <td>integer</td>
+            </tr>            
+<tr>                       
+              <td>autor</td>
+              <td>autor knihy</td>
+              <td>string</td>
+            </tr>                                                                                                                                                   
+                                                                                                                                       
+                                                                                                                                              
+              <tr>                       
+              <td>vzdelavaci</td>
+              <td> vzdělávací žánr na pozadí </td>
+              <td>string</td>
+            </tr>                                                                                                                                                   
+                                                                                                                                       
+                                    
+                                                     
+                                                  
+                                                   
+          </table>
+          <h3>Použité atributy</h3>
+          <table border="1" id="atributy" title="Tabulka atributů">
+            <tr>
+              <td>Oid</td>
+              <td>speciální číslo osoby</td>
+            </tr>
+            <tr>
+              <td>id</td>
+              <td>speciální číslo knihy</td>
+            </tr>
+            <tr>                       
+              <td>typ</td>
+              <td>určuje typ knihovny</td>
+            </tr>
+            <tr>                       
+              <td>TypPrav</td>
+              <td>Určuje typ práv pro uživatele</td>
+            </tr>
+             <tr>
+              <td>src</td>
+              <td> Určuje zdroj obrázku</td>
+            </tr>
+            <tr>
+              <td>Style</td>
+              <td> Určuje styl fontu bold/italic</td>
+            </tr>
+                 <tr>
+              <td>Rasa</td>
+              <td> Určuje rasu uživatele</td>
+            </tr>
+            <tr>
+              <td>vek</td>
+              <td> Určuje věk uživatele</td>
+            </tr>
+                <tr>
+              <td>security</td>
+              <td> Zajišťuje korektnost IBSN</td>
+            </tr>
+              <tr>
+              <td>Delka</td>
+              <td> Zajišťuje délku znaků</td>
+            </tr>
+ 
+          </table>
+</section>
+
+
+
+
+
+
+<!-- Tabulka -->
+
+<section id="transf">
+<article>
+
+<h1>Transformace</h1>
+
+<p>Transformace mi seřadí knihy podle "žánru", dále zobrazí informace jako je jméno knihy, žánr, ISBN, rok, autor a zda je vypůjčená nebo není.</p>
+
+<p></p>
+
+</article>
+</section>
+
+<section id="zaver">
+<article>
+
+<h1>Závěr</h1>
+
+<p>Práce se povedla úspěšně zvalidovat a přinesla mi rozšíření znalostí v XML, XSL a HTML. Transformace XSL jsou velmi užitečné. Dokáží XML přenést do přehlednější podoby, kterou si každý může nastavit sám. Obě validace proběhly v pořadku jak transformace ho XML, tak i HTML validace.</p>
+
+
+
+</article>
+</section>
+
+
+<footer>XML SEMESTRÁLNÍ PRÁCE - Patrik Ptáček (xptap002) 11.4 2017</footer>
+
+</main>
+
+
+
+
+
+</body>
+
+</html>

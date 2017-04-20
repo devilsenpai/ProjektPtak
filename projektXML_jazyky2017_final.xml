@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<knihovna>
+<nastaveni-app>
+    <jazyk>RU</jazyk>
+    <plug>
+        <komentare>1</komentare>
+        <onlinechat>1</onlinechat>
+        <onlinectecka>1</onlinectecka>
+    </plug>   
+    <kontakt-admin>linux@gmail.com</kontakt-admin>
+    
+    <social-media>
+        <facebook>wwww.facebook.com/knihy</facebook>
+        <twitter>wwww.twitter.com/knihy</twitter>
+    </social-media>
+    <mobilniadata>
+        <grafika>
+            <background src="app.jpg">Yellow</background>
+            <font style="bold">Comics</font>
+            <fontcolor>Green</fontcolor>
+        </grafika>
+    </mobilniadata>
+</nastaveni-app>
+
+
+    
+    
+<prava>
+    <typ-prav TypPrav="Host">
+        
+        <cteniknih>1</cteniknih>
+        <komentar>0</komentar>
+        <hodnoceni>0</hodnoceni>
+        <mazaniknih>0</mazaniknih>
+        <pridavaniknih>0</pridavaniknih>
+        <upravazanru>0</upravazanru>
+    </typ-prav>
+    <typ-prav TypPrav="Uzivatel">
+        
+        <cteniknih>1</cteniknih>
+        <komentar>1</komentar>
+        <hodnoceni>1</hodnoceni>
+        <mazaniknih>0</mazaniknih>
+        <pridavaniknih>0</pridavaniknih>
+        <upravazanru>0</upravazanru>
+    </typ-prav>
+    <typ-prav TypPrav="Admin">
+        
+        <cteniknih>1</cteniknih>
+        <komentar>1</komentar>
+        <hodnoceni>1</hodnoceni>
+        <mazaniknih>1</mazaniknih>
+        <pridavaniknih>1</pridavaniknih>
+        <upravazanru>1</upravazanru>
+    </typ-prav>
+</prava>
+   
+    <uzivatel>
+            <osoba Oid="1">
+                <jmeno rasa="none">Návštěvník</jmeno>
+                <prijmeni vek="none"></prijmeni>
+                <prihlas-jmeno>host</prihlas-jmeno>
+                <typ-prav>Host</typ-prav>
+            </osoba>
+            <osoba Oid="2">
+                <jmeno rasa="Mulat">Filip</jmeno>
+                <prijmeni vek="none">Joshua</prijmeni>
+                <prihlas-jmeno>filip123</prihlas-jmeno>
+                <typ-prav>Uzivatel</typ-prav>
+            </osoba>
+            <osoba Oid="3">
+                <jmeno rasa="none">Admin</jmeno>
+                <prijmeni vek="none"></prijmeni>
+                <prihlas-jmeno>AdminNTK</prihlas-jmeno>
+                <typ-prav>Admin</typ-prav>
+            </osoba>
+    </uzivatel>
+
+    <knihovny>
+        <typknihovny typ="Technická">
+            <nazevknuhovny>NTK</nazevknuhovny>
+            <knihaid>"tech2921"</knihaid>
+            <knihaid>"tech9654"</knihaid>
+            <knihaid>"tech9999"</knihaid>
+        </typknihovny>
+        <typknihovny typ="Botanika">
+            <nazevknuhovny>NBK</nazevknuhovny>
+            <knihaid>"bota1337"</knihaid>
+        </typknihovny>  
+        <typknihovny typ="Vzdělávací">
+            <nazevknuhovny>NZK</nazevknuhovny>
+            <knihaid>"vzdel1543"</knihaid>
+        </typknihovny>    
+        <typknihovny typ="Motoristika">
+            <nazevknuhovny>NMK</nazevknuhovny>
+            <knihaid>"moto1243"</knihaid>
+        </typknihovny>    
+        <typknihovny typ="Kuchařka">
+            <nazevknuhovny>NKK</nazevknuhovny>
+            <knihaid>"kuchar8568"</knihaid>
+        </typknihovny>      
+    </knihovny>
+    
+    
+    <zanry>
+        <technika>
+              <kniha id="tech2921">
+                <zanr>Technická</zanr>
+                <nazev>C# jak na to</nazev>
+                <ISBN security="enabled">2921</ISBN>
+                <pujceni>1</pujceni>
+                <rok>2014</rok>
+                <autor delka="25">Jan Hreík</autor>
+              </kniha>
+              <kniha id="tech9654">
+                <zanr>Technická</zanr>
+                <nazev>HTML5 snadno a rychle web</nazev>
+                <ISBN security="enabled">9654</ISBN>
+                <pujceni>1</pujceni>
+                <rok>2017</rok>
+                <autor>Filip Otakárek</autor>
+              </kniha>
+              <kniha id="tech9999">
+                <zanr>Technická</zanr>
+                <nazev>CSS,HTML</nazev>
+                <ISBN security="enabled">9999</ISBN>
+                <pujceni>1</pujceni>
+                <rok>1998</rok>
+                <autor delka="25">Pave Beran</autor>
+              </kniha>            
+        </technika>
+        <Botanika>
+              <kniha id="bota1337">
+                <zanr>Botanika</zanr>
+                <nazev>Růže za 3 dny</nazev>
+                <ISBN security="enabled">1337</ISBN>
+                <pujceni>1</pujceni>
+                <rok>2017</rok>
+                <autor delka="25">Pavla Vaclovská</autor>
+              </kniha>
+        </Botanika>
+        <Kucharka>
+              <kniha id="kuchar8568">
+                <zanr>Kuchařka</zanr>
+                <nazev>Top Indická jídla</nazev>
+                <ISBN security="enabled">8568</ISBN>
+                <pujceni>1</pujceni>
+                <rok>2016</rok>
+                <autor delka="25">Joshua Mustafa</autor>
+              </kniha>
+        </Kucharka>
+        <motoristika>
+            <kniha id="moto1243">
+                <zanr>Motoristika</zanr>
+                <nazev>Jízda za teplem</nazev>
+                <ISBN security="enabled">1243</ISBN>
+                <pujceni>1</pujceni>
+                <rok>2011</rok>
+                <autor delka="25">John Wick</autor>
+              </kniha>
+        </motoristika>
+        <vzdelavaci>
+            <kniha id="vzdel1543">
+                <zanr>Vzdělávací</zanr>
+                <nazev>Příklady k maturite</nazev>
+                <ISBN security="enabled">1543</ISBN>
+                <pujceni>0</pujceni>
+                <rok>2017</rok>
+                <autor delka="25">Albert Einstein</autor>
+              </kniha>
+        </vzdelavaci>
+    </zanry>
+</knihovna>
